@@ -2,20 +2,21 @@
 
 
 
-package org.example.demo.ExpleImplementationDuneClasse.demoExemplePersonne;
+package org.example.DemoImplementationClasse.demoExemplePersonne;
 
-public class Personnes {
+public class Personne {
 
 private int code;
 private String nom;
 
-// Constructeur
-
-    public Personnes(int code, String nom) {
+// Constructeur               =
+    public Personne(int code, String nom) {
         this.code = code;
         this.nom = nom;
     }
 
+
+    // methodes getter et setter
     public int getCode() {
         return code;
     }
@@ -50,7 +51,6 @@ private String nom;
 
 
 
-}
 
 
 
@@ -58,12 +58,14 @@ private String nom;
 
 
 
-    //// Une méthode pour retourne l'état de la personne toString() { return ""+""+}
+
+    // Une méthode pour retourne l'état de la personne toString() { return ""+""+}
 
 
-//    @Override
-//    public String toString() {
-//        return "La Personnes 1 possède l'état suivant : " +
-//                "code = " + code +
-//                ", nom = " + nom ;
+    @Override
+    public String toString() {
+        return "La Personnes 1 possède l'état suivant : " +
+                "code = " + code +
+                ", nom = " + nom;
 
+    }}

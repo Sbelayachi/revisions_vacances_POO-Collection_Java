@@ -9,7 +9,7 @@
     //      = ACCES  uniquement par les classes du même package
 
 
-package org.example.demo.ExpleImplementationDuneClasse;
+package org.example.DemoImplementationClasse.demoexempleMetier;
 
 public class Compte {
 
@@ -58,6 +58,7 @@ public void retirer (float montant)
 
 
     //// Une méthode qui retourne l'état du compte toString() { return ""+""+}
+    @Override
     public String toString() {
         return "code=" + code +
                 ", solde=" + solde + " euros"
