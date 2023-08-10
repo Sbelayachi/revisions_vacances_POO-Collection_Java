@@ -19,6 +19,7 @@ public class WaterTank {
 
     private static double totaliteVolumescCiternes;
 
+    //constructeur
     public WaterTank(double poidsAvide, double capaciteMaximale, double niveauRemplissage) {
         this.poidsAvide = poidsAvide;
         this.capaciteMaximale = capaciteMaximale;
@@ -28,11 +29,11 @@ public class WaterTank {
 
     @Override
     public String toString() {
-        return "WaterTank{" +
-                "poidsAvide=" + poidsAvide +
-                ", capaciteMaximale=" + capaciteMaximale +
-                ", niveauRemplissage=" + niveauRemplissage +
-                '}';
+        return "WaterTank {" +
+                "\n==> Poids à vide = " + poidsAvide +
+                "\n==> Capacité Maximale (Volume max) = " + capaciteMaximale +
+                "\n==> Niveau de Remplissage  = " + niveauRemplissage +
+                "\n}";
     }
 
 
@@ -41,39 +42,24 @@ public class WaterTank {
 
     public void remplir(double volume) {
 
-        if (niveauRemplissage < capaciteMaximale) {
-            this.niveauRemplissage += volume;
+        if (niveauRemplissage > capaciteMaximale) {
+            System.out.println("ATTENTION !!! La Cuve est déja pleine - Capacité maximum atteinte \n==> VOUS NE POUVEZ PAS REMPLIR");
+
+        } else if (niveauRemplissage + volume > capaciteMaximale) {
+            System.out.println("\nATTENTION !!! Dépassement de volume : ");
+            double capaciteLibre ,reste;
+            capaciteLibre=capaciteMaximale-niveauRemplissage;
+            reste = volume-capaciteLibre;
+            niveauRemplissage += capaciteLibre;
+            System.out.println("\nIl reste une capacité "+capaciteLibre+ " litres libres dans la cuve");
+            System.out.println("Si vous versez ce volume  (+ "+volume+" litres),  \n ===> le surplus de " + reste + "litres pourrait générer UN DEBORDEMENT (de "+reste+" litres)");
         }
 
-        else if (niveauRemplissage > capaciteMaximale) {
-
-            double depassement;
-            depassement = (this.niveauRemplissage - capaciteMaximale) + volume;
-            System.out.println("attention !!! dépassement de volume " + depassement + " litres");
-        }
-    }
-}
-//    public void vider (double volume)
-//    {
-//        this.niveauRemplissage-=volume;
-//    }
-//
-
-
-//    public void setNiveauRemplissage(double niveauRemplissage) {
-//        this.niveauRemplissage = niveauRemplissage;
-//    }
-
-
-// ========== Constructeur ===============
-
-
-
-
-
-        // ========== toString ===============
-
-
-
-
-
+         if (niveauRemplissage < capaciteMaximale)
+         {
+             if ((niveauRemplissage+volume)<capaciteMaximale)
+             {
+            System.out.println("REMPLISSAGE");
+            niveauRemplissage += volume;
+        }}
+    }}
