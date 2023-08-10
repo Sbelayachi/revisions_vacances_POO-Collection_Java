@@ -9,7 +9,7 @@
     //      = ACCES  uniquement par les classes du même package
 
 
-package org.example.DemoImplementationClasse.demoexempleMetier;
+package org.example.demo.implementation.exClasseCompte;
 
 public class Compte {
 

@@ -1,7 +1,7 @@
 //        // Instanciation d'objets ==>  ex : compte1, compte2
 
 
-package org.example.DemoImplementationClasse.demoexempleMetier;
+package org.example.demo.implementation.exClasseCompte;
 
 public class Application {
     public static void main(String[] args) {

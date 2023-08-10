@@ -2,7 +2,7 @@
 
 
 
-package org.example.DemoImplementationClasse.demoExemplePersonne;
+package org.example.demo.implementation.exClassePersonne;
 
 public class Personne {
 

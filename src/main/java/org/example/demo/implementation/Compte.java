@@ -3,7 +3,7 @@
  //    ========= DIAPO 11 =========
 
 
-package org.example.DemoImplementationClasse.revisionsImplementationClasse;
+package org.example.demo.implementation;
 
 public class Compte {
 

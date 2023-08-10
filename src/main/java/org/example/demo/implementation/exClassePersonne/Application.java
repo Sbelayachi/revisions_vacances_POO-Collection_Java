@@ -1,4 +1,4 @@
-package org.example.DemoImplementationClasse.demoExemplePersonne;
+package org.example.demo.implementation.exClassePersonne;
 
 public class Application {
     public static void main(String[] args) {
