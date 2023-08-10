@@ -1,6 +1,3 @@
-
-
-
 package org.example.exercices.joueur;
 
 public class Main {
@@ -12,15 +9,19 @@ public class Main {
             System.out.println("Le joueur WarriorDu59 effectue la quête" + i + " : " + warriorDu59.getPointExperience());
 
             if (warriorDu59.getPointExperience() >= 100) {
-warriorDu59.augmenterReinitialiserNiveau();
+            warriorDu59.augmenterReinitialiserNiveau();
             System.out.println("Le joueur WarriorDu59 passe au  niveau " + (warriorDu59.getNiveau()));
+
+            String ancienNom=warriorDu59.getNom();
+            warriorDu59.setNom("LeGigaBossDuJava ");
+                System.out.println(ancienNom + " change de pseudo : "+warriorDu59.getNom());
 
             }
         }
-
     }
 }
 
+//         ==== tests ===
 //        Joueur joueur1 = new Joueur("Saliha",1,80);
 //
 //        joueur1.effectuerUneQuete(10);
@@ -35,7 +36,7 @@ warriorDu59.augmenterReinitialiserNiveau();
 //
 //        System.out.println(joueur1);
 //
-//joueur1.augmenterReinitialiserNiveau();
+//        joueur1.augmenterReinitialiserNiveau();
 //        System.out.println("Joueur " + joueur1.getNom() + " -- Niveau : "+joueur1.getNiveau() + " -- Experience : "+joueur1.getPointExperience() +" Points");
 //    }
 //}

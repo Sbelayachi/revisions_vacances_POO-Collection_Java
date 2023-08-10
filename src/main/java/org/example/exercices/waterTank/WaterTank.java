@@ -26,7 +26,6 @@ public class WaterTank {
         this.niveauRemplissage = niveauRemplissage;
     }
 
-
     @Override
     public String toString() {
         return "WaterTank {" +
@@ -38,7 +37,6 @@ public class WaterTank {
 
 
 //3. Créer une méthode remplir() qui ajoutera une volume d'eau à la citerne
-
 
     public void remplir(double volume) {
 
@@ -61,5 +59,42 @@ public class WaterTank {
              {
             System.out.println("REMPLISSAGE");
             niveauRemplissage += volume;
-        }}
-    }}
+             }}
+    }
+
+    public WaterTank(double poidsAvide) {
+        this.poidsAvide = poidsAvide;
+    }
+
+    //3. Créer une méthode remplir() qui ajoutera une volume d'eau à la citerne
+    public void retirer (double volume2) {
+
+    if (niveauRemplissage > volume2 && (niveauRemplissage-volume2)>0 )
+    {
+        System.out.println(" RETRAIT POSSIBLE DE ( " + volume2 + "litres) :");
+        this.niveauRemplissage -= volume2;
+    }
+        else if (niveauRemplissage < volume2 || (niveauRemplissage-volume2)>0)
+        {
+            System.out.println("ATTENTION : \n==> le volume à retirer est supérieur au volume restant");
+            double possibiteDeRetrait, surplusRetrait;
+            possibiteDeRetrait = niveauRemplissage;
+            surplusRetrait = (volume2 - possibiteDeRetrait);
+            System.out.println("sur les : " + volume2 + " A retirer, vous pourrez retirer que : " + possibiteDeRetrait + " litres, au maximum");
+            System.out.println("Les reste : ==> " + surplusRetrait + " litres, ne porront pas être retirés tant que la cuve est à ce niveau ( " + niveauRemplissage + " litres) ");
+            niveauRemplissage=0;
+        }
+
+
+        //5. Créer un attribut de classe qui contiendra la totalité des volumes d'eau de la citerne
+
+
+
+
+    }
+}
+
+
+
+
+
