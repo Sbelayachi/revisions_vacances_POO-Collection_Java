@@ -21,7 +21,7 @@ public class Compte {
 
     // 2- IMPLEMENTATION avec le CONSTRUCTOR
 
-//    public Compte() {
+///    public Compte() {
 //        System.out.println("je suis le constructeur sans paramètre");
 //    }
 
@@ -44,7 +44,7 @@ public class Compte {
 
     // Méthodes d'instance :  <visibilité> <type de retour> <nom> (<parmétres>)
 
-//    public void compte(int c, float s) {
+///    public void compte(int c, float s) {
 //        code=c;
 //        solde=s;
 //    }

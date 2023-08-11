@@ -6,13 +6,13 @@ public class Personne {
     private int code;
     private String name;
 
-//    //Constructeur
-//
-//
-//    public Personne(int code, String name) {
-//        this.code = code;
-//        this.name = name;
-//    }
+    /*
+Constructeur
+    public Personne(int code, String name) {
+        this.code = code;
+        this.name = name;
+    }
+*/
 
     /// getter et setter
     public int getCode() {

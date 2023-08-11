@@ -16,7 +16,7 @@ public class Compte {
 
 
     // Attributs-variables d'instance
-    private int code;
+    private final int code;
     private float solde;
 
 //      ======  ajouter à la classe Compte : une variable qui permet de stocker le nombre de comptes créés.
@@ -34,8 +34,11 @@ private static int nombreCompte;
 //      du constructeur), nbCompte est incrémentée et on profite de la valeur de nbComptes pour initialiser le
 //      code du compte.
 
-    public Compte(int code, float solde) {
-        this.code = nombreCompte++;
+
+    /// Inutilisé
+
+    public Compte(float solde) {
+        this.code =nombreCompte++;
         this.solde = solde;
     }
 
@@ -58,29 +61,29 @@ private static int nombreCompte;
     public int getCode() {
         return code;
     }
-
-    public void setCode(int code) {
-        this.code = code;
-    }
-
+///
+///    public void setCode(int code) {
+//        this.code = code;
+//    }
+//
     public float getSolde() {
         return solde;
     }
-
-    public void setSolde(float solde) {
-        this.solde = solde;
-    }
+///
+///    public void setSolde(float solde) {
+//        this.solde = solde;
+//    }
 
 
 ////   Retourner la valeur d'une VARIABLE STATIQUE de nbComptes = idem on AJOUTE STATIC APRES LA VISIBILITE
 
     public static int getNombreCompte() {
-        return nombreCompte;
+        return nombreCompte ;
     }
 
-    public static void setNombreCompte(int nombreCompte) {
-        Compte.nombreCompte = nombreCompte;
-    }
+//    public static void setNombreCompte(int nombreCompte) {
+//        Compte.nombreCompte = nombreCompte;
+//    }
 
 
     // affichage état de l'objet

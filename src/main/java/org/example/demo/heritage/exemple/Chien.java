@@ -1,4 +1,4 @@
-package org.example.demo.heritage.exemple;
-
-public class Chien {
-}
+///package org.example.demo.heritage.exemple;
+///
+///public class Chien {
+//}

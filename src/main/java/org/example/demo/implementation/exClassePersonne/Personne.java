@@ -6,7 +6,7 @@ package org.example.demo.implementation.exClassePersonne;
 
 public class Personne {
 
-private int code;
+private final int code;
 private String nom;
 
 // Constructeur               =
@@ -17,11 +17,11 @@ private String nom;
 
 
     // methodes getter et setter
-//    public int getCode() {
+///    public int getCode() {
 ////        return code;
 //    }
-//
-//    public void setCode(int code) {
+///
+///    public void setCode(int code) {
 //        this.code = code;
 //    }
 

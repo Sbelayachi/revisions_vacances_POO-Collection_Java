@@ -1,4 +1,4 @@
-package org.example.demo.heritage.exemple;
+///package org.example.demo.heritage.exemple;
 
-public class Chat {
-}
+///public class Chat {
+//}
