@@ -17,13 +17,13 @@ private String nom;
 
 
     // methodes getter et setter
-    public int getCode() {
-        return code;
-    }
-
-    public void setCode(int code) {
-        this.code = code;
-    }
+//    public int getCode() {
+////        return code;
+//    }
+//
+//    public void setCode(int code) {
+//        this.code = code;
+//    }
 
     public String getNom() {
         return nom;

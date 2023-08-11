@@ -10,21 +10,21 @@ WaterTank waterTank1=new WaterTank(150,500,200.50);
 ////    ===================== Instanciation Methode ==> REMPLIR ==========================
 
         waterTank1.remplir(400);
-        System.out.println(waterTank1.toString());
+        System.out.println(waterTank1);
 
 WaterTank waterTank2=new WaterTank(150,180,100);
 
         waterTank2.remplir(50);
-        System.out.println(waterTank2.toString());
+        System.out.println(waterTank2);
 
         waterTank2.remplir(50);
-        System.out.println(waterTank2.toString());
+        System.out.println(waterTank2);
 
         waterTank2.remplir(50);
         waterTank2.remplir(50);
         waterTank2.remplir(50);
 
-        System.out.println(waterTank2.toString());
+        System.out.println(waterTank2);
 
 
         /// =============== Instanciation Méthode RETIRER

@@ -14,8 +14,8 @@ public class MainCompte {
 
         //Création d'objet(s) SANS CONSTRUCTEUR
   Compte c1 = new Compte();
-  Compte c2=new Compte();
-  c1.setCode(6);
+        Compte c2 = new Compte();
+        c1.setCode(6);
 c1.setSolde(6000);
         //Instanciation/application méthode(s) à l(objet(s)
 

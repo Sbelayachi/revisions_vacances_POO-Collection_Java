@@ -7,6 +7,6 @@ public class Application {
         p.setNom("AZER");
         System.out.println(p.getNom());
 
-        System.out.println(p.toString());
+//        System.out.println(p.toString());
     }
 }
