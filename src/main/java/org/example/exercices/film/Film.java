@@ -16,10 +16,10 @@ import java.time.LocalDate;
 
 public class Film {
 
-    private String titre;
-    private String realisateur;
-    private LocalDate dateDeSortie;
-    private String genre;
+    private final String titre;
+    private final String realisateur;
+    private final LocalDate dateDeSortie;
+    private final String genre;
 
 // Constructeur
 
@@ -38,33 +38,33 @@ public class Film {
         return titre;
     }
 
-    public void setTitre(String titre) {
-        this.titre = titre;
-    }
+///    public void setTitre(String titre) {
+//        this.titre = titre;
+//    }
 
     public String getRealisateur() {
         return realisateur;
     }
 
-    public void setRealisateur(String realisateur) {
-        this.realisateur = realisateur;
-    }
+///    public void setRealisateur(String realisateur) {
+//        this.realisateur = realisateur;
+//    }
 
     public LocalDate getDateDeSortie() {
         return dateDeSortie;
     }
 
-    public void setDateDeSortie(LocalDate dateDeSortie) {
-        this.dateDeSortie = dateDeSortie;
-    }
+///    public void setDateDeSortie(LocalDate dateDeSortie) {
+//        this.dateDeSortie = dateDeSortie;
+//    }
 
     public String getGenre() {
         return genre;
     }
 
-    public void setGenre(String genre) {
-        this.genre = genre;
-    }
+//    public void setGenre(String genre) {
+//        this.genre = genre;
+//    }
 
 
     // methode toString

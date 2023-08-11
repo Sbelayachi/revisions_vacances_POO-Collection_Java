@@ -13,11 +13,11 @@ package org.example.exercices.waterTank;
 
 public class WaterTank {
 
-    private double poidsAvide;
-    private double capaciteMaximale;
+    private final double poidsAvide;
+    private final double capaciteMaximale;
     private double niveauRemplissage;
 
-    private static double totaliteVolumescCiternes;
+//    private static double totaliteVolumescCiternes;
 
     //constructeur
     public WaterTank(double poidsAvide, double capaciteMaximale, double niveauRemplissage) {
@@ -62,9 +62,9 @@ public class WaterTank {
              }}
     }
 
-    public WaterTank(double poidsAvide) {
-        this.poidsAvide = poidsAvide;
-    }
+///    public WaterTank(double poidsAvide) {
+//        this.poidsAvide = poidsAvide;
+//    }
 
     //3. Créer une méthode remplir() qui ajoutera une volume d'eau à la citerne
     public void retirer (double volume2) {

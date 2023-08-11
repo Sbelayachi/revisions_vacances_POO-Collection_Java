@@ -28,9 +28,9 @@ public class Chaise {
 
 // Methode toString pour afficher l'état de la chaise
 
-public void afficher (){
-    System.out.println(toString());
-}
+//public void afficher (){
+//    System.out.println(toString());
+//}
 
 
 
