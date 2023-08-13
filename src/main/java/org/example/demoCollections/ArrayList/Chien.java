@@ -1,4 +1,4 @@
-package org.example.ArrayList;
+package org.example.demoCollections.ArrayList;
 
 public class Chien extends Animal {
 

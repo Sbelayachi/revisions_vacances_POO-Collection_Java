@@ -1,6 +1,6 @@
 //          ===== DEMO =====
 
-package org.example.ArrayList;
+package org.example.demoCollections.ArrayList;
 
 public  class Animal {    // Déclaraction d'une classe abstraite = mot clé 'abstract' devant class / après visibilité)
     protected String nom;

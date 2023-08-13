@@ -1,4 +1,4 @@
-package org.example.ArrayList;
+package org.example.demoCollections.ArrayList;
 
 // // Utilisation de mot clé extends pour hériter d'une classe + nom de la classe
 public class Chat extends Animal {
