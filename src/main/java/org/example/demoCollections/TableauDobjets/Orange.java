@@ -5,8 +5,7 @@ import java.util.Arrays;
 public class Orange {
 
 
-   public int[] Orange = new int[1];
-
+Orange[] oranges=new Orange[5];
 
 
 
