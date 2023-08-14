@@ -46,7 +46,7 @@ public class IHM {
         Room room4 = new Room(54, true, 1, 500.60);
         Room room5 = new Room(94, true, 2, 200.00);
         Room room6 = new Room(641, true, 5, 1000.30);
-//        System.out.println(hotel.toString());
+        room3.printRoomsStatus();
 
 ////  Ajouter des chambres à la liste des chambres de l'hôtel :
 //

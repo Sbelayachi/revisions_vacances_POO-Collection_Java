@@ -13,19 +13,20 @@ package org.example.exercicesCollections.hotel;
 
 //Créer une classe Client possédant : un identifiant, un nom, un prénom et un numéro de téléphone
 public class Customer {
-
     private int customerId;
     private String firstName;
     private String lastName;
     private String phoneNumber;
 
 // Constructor
-    public Customer(int customerId,String firstName, String lastName, String phoneNumber) {
+
+    public Customer(int customerId, String firstName, String lastName, String phoneNumber) {
         this.customerId = customerId;
         this.firstName = firstName;
         this.lastName = lastName;
         this.phoneNumber = phoneNumber;
     }
+
 
     // Getter-Setter (=> attributs privés)
 
@@ -37,6 +38,7 @@ public class Customer {
         this.customerId = customerId;
     }
 
+
     public String getFirstName() {
         return firstName;
     }
@@ -44,6 +46,7 @@ public class Customer {
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
+
 
     public String getLastName() {
         return lastName;
@@ -53,6 +56,7 @@ public class Customer {
         this.lastName = lastName;
     }
 
+
     public String getPhoneNumber() {
         return phoneNumber;
     }
@@ -61,10 +65,7 @@ public class Customer {
         this.phoneNumber = phoneNumber;
     }
 
-
-
     // Affichage
-
 
     @Override
     public String toString() {
@@ -74,7 +75,6 @@ public class Customer {
                 "\n ==> LastName = " + lastName +
                 "\n ==> PhoneNumber = " + phoneNumber ;
     }
-
 
     public void printCustomer() {
         System.out.println("=====================================================================================================\n" +
