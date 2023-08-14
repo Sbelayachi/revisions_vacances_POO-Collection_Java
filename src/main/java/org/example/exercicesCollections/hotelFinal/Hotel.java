@@ -1,17 +1,8 @@
-//====== Exercice L'hôtel =======
-//==> Sujet
-//Créer une classe Client possédant : un identifiant, un nom, un prénom et un numéro de téléphone
-//Créer une classe Chambre ayant : un numéro, un statut, un nombre de lits et un tarif.
-//Créer une classe Réservation possédant : un identifiant, un statut , une liste de chambres et un client
-//Créer une classe Hotel comportant : une liste de clients, une liste de chambres et une liste de réservations
-//Créer une IHM pour tester l'application
-
-package org.example.exercicesCollections.hotel;
+package org.example.exercicesCollections.hotelFinal;
 
 import java.util.List;
 
 public class Hotel {
-
     private String hotelName;
     private List<Customer> customers;
     private List<Room> rooms;
@@ -29,33 +20,45 @@ public class Hotel {
 
     }
 
-    // méthodes pour ajouter des CLIENTS à l'hôtel
+    // méthodes pour ajouter et supprimer  des CLIENTS à l'hôtel
+
     public void ajouterClient(Customer client) {
         customers.add(client);
     }
-
-    // méthodes pour ajouter des CHAMBRES à l'hôtel
-    public void ajouterChambre(Room room) {
-        rooms.add(room);
+    public void supprimer(Customer client) {
+        customers.remove(client);
     }
 
-// methode pour afficher liste client
+    // methode pour afficher liste client
     public List<Customer> getListeClients() {
         return customers;
     }
-    // méthodes pour ajouter des RESERVATIONS à l'hôtel
+    // méthodes pour ajouter ou supprimer des CHAMBRES à l'hôtel
+
+    public void ajouterChambre(Room room) {
+        rooms.add(room);
+    }
+    public void supprimerChambre(Room room) {
+        rooms.remove(room);
+    }
+
+
+
+    // méthodes pour ajouter et supprimer des RESERVATIONS à l'hôtel
     public void ajouterReservation(Reservation reservation) {
         reservations.add(reservation);
     }
-
+    public void supprimerReservation(Reservation reservation) {
+        reservations.remove(reservation);
+    }
     public void prinHotel() {
         System.out.println(
                 "======================================================================================================\n"+
-                "Details of the HOTEL " +
-                "\n ==> Name = " + hotelName +
-                "\n ==> Customers = " + customers +
-                "\n ==> Rooms = " + rooms +
-                "\n ==> Reservations=" + reservations + " \n=====================================================================================");
+                        "Details of the HOTEL " +
+                        "\n ==> Name = " + hotelName +
+                        "\n ==> Customers = " + customers +
+                        "\n ==> Rooms = " + rooms +
+                        "\n ==> Reservations=" + reservations + " \n=====================================================================================");
     }
 
     // Getter et Setter

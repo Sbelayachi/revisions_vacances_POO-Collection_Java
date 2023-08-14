@@ -9,7 +9,7 @@
 
 
 
-package org.example.exercicesCollections.hotel;
+package org.example.exercicesCollections.hotel.hotelBrouillon;
 
 //Créer une classe Client possédant : un identifiant, un nom, un prénom et un numéro de téléphone
 public class Customer {

@@ -7,10 +7,9 @@
 ////Créer une IHM pour tester l'application
 
 
-package org.example.exercicesCollections.hotel;
+package org.example.exercicesCollections.hotel.hotelBrouillon;
 
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Reservation {
@@ -28,12 +27,14 @@ public class Reservation {
 
     // CONSTRUCTOR
 
-    public Reservation(int reservationId, boolean reservationStatus, List<Room> rooms, Customer client) {
+    public Reservation(int reservationId, boolean reservationStatus, List<Room> rooms, Customer customer) {
         this.reservationId = reservationId;
         this.reservationStatus = reservationStatus;
-        this.rooms = rooms = new ArrayList<Room>();
-        this.customer = client;
+        this.rooms = rooms;
+        this.customer = customer;
     }
+
+
 
     // GETTER and SETTER (attributs privés)
 
@@ -70,7 +71,14 @@ public class Reservation {
     }
 
 
-    // méthodes d'affichage
+
+
+
+
+
+        // méthodes d'affichage
+
+
 
     @Override
     public String toString() {
@@ -90,4 +98,15 @@ public class Reservation {
                 "\n ==> Details of Rooms = " + rooms +
                "\n => Details of client = " + customer + "\n===================================================================================================== ");
     }
-}
+
+
+    // Affichage du statut de la reservation
+    public void printReservationStatus()
+    {
+        if (reservationStatus)
+        {
+            System.out.println("Réservée");
+        }
+        else {System.out.println("Non Réservée");
+        }
+}}

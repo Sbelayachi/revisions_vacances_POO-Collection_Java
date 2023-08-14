@@ -6,7 +6,7 @@
 //Créer une classe Hotel comportant : une liste de clients, une liste de chambres et une liste de réservations
 //Créer une IHM pour tester l'application
 
-package org.example.exercicesCollections.hotel;
+package org.example.exercicesCollections.hotel.hotelBrouillon;
 
 public class Room {
 
